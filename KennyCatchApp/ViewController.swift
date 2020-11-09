@@ -68,6 +68,8 @@ class ViewController: UIViewController , UITextFieldDelegate {
     }
     
     //MARK: - Functions
+    
+    //Time countDown
     @objc func Update(){
         
         counter -= 1;
@@ -106,6 +108,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
         
     }
     
+    //The Kenny hide and random show
     @objc func kennyHidden (){
         
         var i = 0;
@@ -120,6 +123,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
         
     }
     
+    //When click imageview
     @objc func onImageViewTap()
     {
         score += 1;
@@ -140,7 +144,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
         
     }
     
-    
+    //Show high score
     func resultScore(){
         
         if topScore < score {
@@ -151,6 +155,7 @@ class ViewController: UIViewController , UITextFieldDelegate {
         }
     }
     
+    //Image clickable
     func imageViewFeature(){
         
         imageView.isUserInteractionEnabled = true;
